@@ -1,0 +1,57 @@
+html {
+  scrollbar-width: none;
+  overflow: hidden;
+  background: black;
+  color: white;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  scale: 200%;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+#tv {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+
+#channel {
+  position: absolute;
+  z-index: 3;
+  image-rendering: pixelated;
+}
+
+.content {
+  position: relative;
+  top: 33px;
+  left: 24px;
+  width: 248px;
+  height: 184px;
+  scrollbar-width: none;
+  overflow: scroll;
+  z-index: 1;
+  text-align: center;
+}
+
+.channel-button {
+  position: absolute;
+  z-index: 3;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+}
