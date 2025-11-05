@@ -64,7 +64,7 @@ window.onload = function() {
 
 let screenToggle = false;
 setInterval(() => {
-  document.getElementById('tv').src = screenToggle ? '../assets/tv1.png' : '../assets/tv2.png';
+  document.getElementById('tv').src = screenToggle ? 'assets/tv1.png' : 'assets/tv2.png';
   screenToggle = !screenToggle;
 }, 100);
 
@@ -90,11 +90,11 @@ function channelUp() {
 function updateScreen() {
   const contentDiv = document.getElementById("content");
   const channelDiv = document.getElementById("channel");
-  contentDiv.innerHTML = `<img src="../assets/static.gif" alt="tv static">`;
-  channelDiv.src = `../assets/channels/channel${currentChannel}.png`;
+  contentDiv.innerHTML = `<img src="assets/static.gif" alt="tv static">`;
+  channelDiv.src = `assets/channels/channel${currentChannel}.png`;
   setTimeout(() => {
     if (channels[currentChannel] == null) {
-      contentDiv.innerHTML = `<img src="../assets/static.gif" alt="tv static">`;
+      contentDiv.innerHTML = `<img src="assets/static.gif" alt="tv static">`;
     }
     else {
       contentDiv.innerHTML = channels[currentChannel];
